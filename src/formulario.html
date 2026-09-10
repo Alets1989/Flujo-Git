@@ -1,30 +1,37 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formulario</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Mon formulaire</h1>
-    <form>
-        <div>
-            <input type="text" placeholder="Ingresa tu signo zodiacal">
-            <br>
-            <input type="number" placeholder="whats your classroom">
-            <br>
-            <input type="text" placeholder="Who is your best friend?">
-            <br>
-            <label>¿Cuando crees morir?</label>
-            <br>
-            <input type="date">
-            <br>
-            <label>¿Cuantos tacos has comido?</label>
-            <br>
-            <input type="number" placeholder="taquitos yummy yummy">
-            <br>
-            <button type="submit">Guardar</button>
-        </div>    
+    <form onsubmit="miFuncion(event)">
+      <div>
+        <input type="text" placeholder="Ingresa tu signo zodiacal" />
+        <br />
+        <input type="number" placeholder="whats your classroom" />
+        <br />
+        <input type="text" placeholder="Who is your best friend?" />
+        <br />
+        <label>¿Cuando crees morir?</label>
+        <br />
+        <input type="date" />
+        <br />
+        <label>¿Cuantos tacos has comido?</label>
+        <br />
+        <input type="number" placeholder="taquitos yummy yummy" />
+        <br />
+        <button type="submit">Guardar</button>
+      </div>
     </form>
-</body>
+
+    <script>
+      function miFuncion(event) {
+        event.preventDefault();
+        window.alert("xD");
+      }
+    </script>
+  </body>
 </html>
