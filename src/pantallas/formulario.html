@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/estilos.css" />
+    <link rel="stylesheet" href="../css/formulario.css" />
+    <script src="../js/formulario.js" defer></script>
+    <title>Formulario</title>
+  </head>
+  <body>
+    <nav>
+      <a href="../pantallas/boton-del-caos.html">Botón del caos</a>
+      <a href="../pantallas/formulario.html">Formulario absurdo</a>
+      <a href="../pantallas/cartas.html">Cartas</a>
+      <a href="../pantallas/DOM.html">Crear tareas</a>
+    </nav>
+    <h1>Mon formulaire</h1>
+    <form onsubmit="miFuncion(event)">
+      <div>
+        <input type="text" placeholder="Ingresa tu signo zodiacal" />
+        <br />
+        <input type="number" placeholder="whats your classroom" />
+        <br />
+        <input type="text" placeholder="Who is your best friend?" />
+        <br />
+        <label>¿Cuando crees morir?</label>
+        <br />
+        <input type="date" />
+        <br />
+        <label>¿Cuantos tacos has comido?</label>
+        <br />
+        <input type="number" placeholder="taquitos yummy yummy" />
+        <br />
+        <button type="submit">Guardar</button>
+      </div>
+    </form>
+
+    <script>
+      function miFuncion(event) {
+        event.preventDefault();
+        window.alert("xD");
+      }
+    </script>
+  </body>
+</html>
