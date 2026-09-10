@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botón del caos</title>
+</head>
+<body>
+    <div>
+        <h1 id="titulo-boton">Pantalla del botón del caos</h1>
+        <button onclick="cambiarColorTitulo()">boton del caos</button>
+    </div>
+</body>
+<script>
+    let contador = 0;
+
+    function cambiarColorTitulo() {
+        const colors = ['red', 'blue', 'green', 'black'];
+        document.getElementById('titulo-boton').style.color = colors[contador];
+        if (contador === colors.length - 1) {
+            contador = 0;
+        } else {
+            contador++;
+        }
+    }
+</script>
+</html>
