@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Práctica: manipulación del DOM</title>
+    <link rel="stylesheet" href="css/DOM.css">
+    <script src="js/DOM.js" defer></script>
+
+</head>
+<body>
+	<main>
+		<h1>Lista de tareas</h1>
+		<p>Agrega una tarea, márcala como completada o elimínala.</p>
+
+		<form class="formulario" id="formulario-tarea">
+			<input id="entrada-tarea" type="text" placeholder="Escribe una tarea" aria-label="Nueva tarea">
+			<button type="submit">Agregar</button>
+		</form>
+
+		<p class="contador">Tareas pendientes: <strong id="contador">0</strong></p>
+		<ul id="lista-tareas"></ul>
+	</main>
+
+	
+</body>
+</html>
